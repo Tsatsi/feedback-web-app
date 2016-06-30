@@ -1,17 +1,17 @@
 # Coded in Braam feedback app
 ## Step 1 - The setup
 
-  #### Install React and React DOM
+#### Install React and React DOM
     1. npm install --save react
     2. npm install --save react-dom
 
 
-  #### Install Webpack and Webpack server
+#### Install Webpack and Webpack server
     1. npm install --save-dev webpack
     2. npm install webpack-dev-server - g
 
 
-  #### Install Babel
+#### Install Babel
     npm install --save-dev babel-loader
     npm install --save-dev babel-core
     npm install --save-dev babel-preset-es2015
@@ -19,8 +19,8 @@
 
 
 
-  #### Test Setup: create component.
-  #####  feedback.jsx
+#### Test Setup: create component.
+#####  feedback.jsx
     import React from 'react';
     import ReactDOM from 'react-dom';
 
@@ -33,12 +33,12 @@
 
     ReactDOM.render(<Feedback/>, document.getElementById('feedback'));
 
-  #### Create javascript entry point  file to import dependencies
-  ##### index.js
+#### Create javascript entry point  file to import dependencies
+##### index.js
     import Feedback from './feedback.jsx';
 
-  #### Add webpack configuration to load the jsx files
-  ##### webpack.config.js
+#### Add webpack configuration to load the jsx files
+##### webpack.config.js
     var path = require('path');
     var webpack = require('webpack');
 
