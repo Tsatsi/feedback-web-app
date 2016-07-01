@@ -1,11 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
+import ThumbIndicator from './thumbIndicator'
 
 
 class Feedback extends React.Component {
   render(){
-      return <div> This is coded in braam feedback app</div>
+      const thumbsStyle = { margin:"auto", width:"50%"}
+      return <div style={thumbsStyle}>
+              <ThumbIndicator thumb={"up"}/>
+              <ThumbIndicator thumb={"down"}/>
+             </div>
   }
 }
 
-ReactDOM.render(<Feedback/>, document.getElementById('feedback'));
+render(<Feedback/>, document.getElementById('feedback'));
